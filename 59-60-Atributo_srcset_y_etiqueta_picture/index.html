@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>srcset attribute</title>
+	<style>
+		.svg_picture {
+			max-width: 25%;
+		}
+	</style>
+</head>
+
+<body>
+	<main>
+
+<!-- 		<img srcset= "
+			assets/images/Loreto_eyes_1x.jpg 1x,
+			assets/images/Loreto_eyes_2x.jpg 2x
+		"
+		src ="assets/images/Loreto_eyes_1x.jpg" alt="Loreto eyes">
+
+		<img src="assets/images/Loreto_eyes.svg" alt="Loreto eyes SVG"> -->
+
+		<picture>
+			<source srcset= "
+			assets/images/Loreto_eyes_1x.jpg 1x,
+			assets/images/Loreto_eyes_2x.jpg 2x
+		" media="(max-width:1200px)">
+			<img id="svg_picture" src="assets/images/Loreto_eyes.svg" alt="Loreto eyes SVG">
+		</picture>
+	</main>
+
+	<footer>
+		HTML course 2023
+	</footer>
+
+</body>
+
+</html>

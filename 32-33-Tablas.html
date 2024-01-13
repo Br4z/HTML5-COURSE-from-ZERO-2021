@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tables</title>
+
+	<style>
+		/* td {
+			background-color: aquamarine;
+		} */
+		col:nth-child(1) {
+			background-color: yellow;
+		}
+		col:nth-child(2) {
+			background-color: blue;
+		}
+		col:nth-child(3) {
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+
+	<main>
+		<h1>Schoolar schedule</h1>
+
+		<table>
+			<caption>SCHEDULE</caption>
+			<colgroup>
+				<col span="2">
+				<col span="2">
+				<col span="2">
+			</colgroup>
+			<thead>
+				<tr>
+					<td></td>
+					<td>M</td>
+					<td>Tu</td>
+					<td>W</td>
+					<td>Th</td>
+					<td>F</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><time datetime="08:30">08:30</time> - <time datetime="09:30">09:30</time></td>
+					<td>Math</td>
+					<td>Math</td>
+					<td>Social Sciences</td>
+					<td>Math</td>
+					<td>Math</td>
+				</tr>
+				<tr>
+					<td><time datetime="9:30">09:30</time> - <time datetime="10:25">10:25</time></td>
+					<td>English</td>
+					<td>English</td>
+					<td>Math</td>
+					<td>Sciences</td>
+					<td>English</td>
+				</tr>
+				<tr>
+					<td><time datetime="11:20">11:20</time> - <time datetime="11:45">11:45</time></td>
+					<td colspan="5">Break</td>
+				</tr>
+				<tr>
+					<td><time datetime="11:45">11:45</time> - <time datetime="12:40">12:40</time></td>
+					<td>Spanish</td>
+					<td>Social Sciences</td>
+					<td>Spanish</td>
+					<td>Mentoring</td>
+					<td>Spanish</td>
+				</tr>
+				<tr>
+					<td><time datetime="12:40">12:40</time> - <time datetime="13:35">13:35</time></td>
+					<td>Music</td>
+					<td>Physical education</td>
+					<td>Handicraft</td>
+					<td rowspan="2">Religion</td>
+					<td>Music</td>
+				</tr>
+				<tr>
+					<td><time datetime="13:35">13:35</time> - <time datetime="14:30">14:30</time></td>
+					<td>Technology</td>
+					<td>French</td>
+					<td>Technology</td>
+					<td>French</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="5">Subjects</td>
+					<td>12</td>
+				</tr>
+			</tfoot>
+		</table>
+	</main>
+
+	<footer>
+		HTML course 2023
+	</footer>
+
+</body>
+
+</html>

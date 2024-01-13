@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Global attributes</title>
+
+	<style>
+		.my_class {
+			color: red;
+		}
+	</style>
+</head>
+
+<body>
+
+	<main>
+		<p class="my_class">Class</p>
+		<p id="my_id_1">ID</p>
+		<p title="This is my title">Title</p>
+		<p id="my_id_2" data-my_data="my_data_content">Data</p>
+
+		<script>
+			const p1 = document.getElementById("my_id_1")
+			const p2 = document.getElementById("my_id_2")
+
+			console.log(p1.textContent)
+			console.log(p2.dataset.my_data)
+		</script>
+	</main>
+
+	<footer>
+		HTML course 2023
+	</footer>
+
+</body>
+
+</html>

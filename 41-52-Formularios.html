@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Forms</title>
+</head>
+
+<body>
+
+	<main>
+		<h1>Forms</h1>
+		<form> <!-- 41 y 42 -->
+			<label>Sing in</label>
+			<!-- <label for="name">Name</label>
+			<input id="name"> -->
+			<label>Name
+				<input>
+			</label>
+			<button>Submit</button>
+			<input type="submit" value="submit">
+		</form>
+
+		<form> <!-- 43 -->
+			<input type="datetime-local">
+			<input type="date">
+			<input type="time">
+			<input type="month">
+			<input type="week">
+		</form>
+
+		<form> <!-- 44 -->
+			<label>Sing up</label>
+			<label>Search
+				<input type="search">
+			</label>
+			<label>Telephone
+				<input type="tel">
+			</label>
+			<label>Email
+				<input type="email">
+			</label>
+			<label>Password
+				<input type="password">
+			</label>
+			<label>URL
+				<input type="url">
+			</label>
+		</form>
+
+		<form> <!-- 45 -->
+			<input type="color">
+			<input type="number">
+			<input type="range">
+			<input type="reset">
+			<input type="text">
+		</form>
+
+		<form> <!-- 46 -->
+			<label>Gender</label>
+			<label>Male
+				<input type="radio" name="gender" value="male" checked>
+			</label>
+			<label>Female
+				<input type="radio" name="gender" value="female">
+			</label>
+		</form>
+
+		<form> <!-- 47 -->
+			<label>Languages that you know</label>
+			<label>HTML
+				<input type="checkbox" name="languages" value="html" checked>
+			</label>
+			<label>CSS
+				<input type="checkbox" name="languages" value="css">
+			</label>
+			<label>JavaScript
+				<input type="checkbox" name="languages" value="javascript">
+			</label>
+		</form>
+
+		<form> <!-- 48 -->
+			<select name="languages" multiple>
+				<option value="html">HTML</option>
+				<option value="css">CSS</option>
+				<option value="javascript">JavaScript</option>
+			</select>
+		</form>
+
+	<form> <!-- 49 -->
+		<label>Pets</label>
+		<select>
+			<optgroup label="Dogs">
+				<option value="golden retriever">Golden Retriever</option>
+				<option value="german shepherd">German Shepherd</option>
+				<option value="poodle">Poodle</option>
+			</optgroup>
+			<optgroup label="Cats">
+				<option value="persian">Persian</option>
+				<option value="siamese">Siamese</option>
+				<option value="maine coon">Maine Coon</option>
+			</optgroup>
+			<optgroup label="Birds">
+				<option value="parrot">Parrot</option>
+				<option value="canary">Canary</option>
+				<option value="budgerigar">Budgerigar</option>
+			</optgroup>
+		</select>
+	</form>
+
+	<form> <!-- 50 -->
+		<input type="list" list="pets">
+		<datalist id="pets">
+				<option value="golden retriever">Dog</option>
+				<option value="german shepherd">Dog</option>
+				<option value="poodle">Dog</option>
+				<option value="persian">Cat</option>
+				<option value="siamese">Cat</option>
+				<option value="maine coon">Cat</option>
+				<option value="parrot">Bird</option>
+				<option value="canary">Bird</option>
+				<option value="budgerigar">Bird</option>
+		</datalist>
+	</form>
+
+	<form> <!-- 51 -->
+		<fieldset>
+			<legend>Personal data</legend>
+			<label for="name">Name</label>
+			<input type="text" id="name">
+			<label for="last_name">Last name</label>
+			<input type="text" id="last_name">
+		</fieldset>
+		<input type="file">
+		<label for="file">File uploading progress</label>
+		<progress id="files" value="70" max="100">70%</progress>
+		<label for="fuel">Fuel</label>
+		<meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="50">at 50/100</meter>
+	</form>
+
+	<form> <!-- 52 -->
+		<label>Sign up 2.0</label>
+		<input type="text" value="easter egg" disabled>
+		<input type="text" value="&lt;id&gt;" readonly>
+		<input type="text" placeholder="nickname" autofocus>
+		<select>
+			<option value="male" selected>male</option>
+			<option value="female">female</option>
+		</select>
+		<input type="number" placeholder="age" min=1 max=100>
+		<input type="text" placeholder="number" min=0 max=9>
+		<input type="submit">
+	</form>
+
+	</main>
+
+	<footer>
+		HTML course 2023
+	</footer>
+
+</body>
+
+</html>
